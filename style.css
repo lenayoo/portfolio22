@@ -1,3 +1,39 @@
+:root {
+  /* logo */
+  --pink-color: ##F29B9B;
+  --blue-color: ##6A9AD9;
+  --yellow-color: ##F29B30;
+  --cloud-color: #F3E4CF;
+  /* basic setting */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-black: #000000;
+
+  /* font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight */
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
 #navbar {
   display: flex;
   justify-content: space-between;
