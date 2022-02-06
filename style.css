@@ -1,8 +1,8 @@
 :root {
   /* logo */
-  --pink-color: ##F29B9B;
-  --blue-color: ##6A9AD9;
-  --yellow-color: ##F29B30;
+  --pink-color: #F29B9B;
+  --blue-color: #6A9AD9;
+  --yellow-color: #F29B30;
   --cloud-color: #F3E4CF;
   /* basic setting */
   --color-white: #ffffff;
@@ -12,6 +12,7 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-black: #000000;
+  --color-dark-blue: #426ca3;
 
   /* font size */
   --font-large: 48px;
@@ -21,6 +22,9 @@
   --font-micro: 14px;
 
   /* font weight */
+
+  /* size */
+  --border-radius: 4px;
 }
 
 /* Universal tags */
@@ -53,27 +57,42 @@ p {
   margin: 4px 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
+* {
+  margin: 0;
+}
 
 
 #navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-color);
+  color: var(--color-white);
+  padding: 8px 12px;
 }
 
 .nav__logo {
   display: flex;
+  align-items: center;
 }
 
-.nav__logo p {
+.nav__logo h2 {
   font-size: 18px;
+  color: var(--color-white);
   padding: 8px 12px;
+  font-size: 20px;
 }
 
 .nav__logo img {
   width: 70px;
   height: 70px;
-  padding: 8px 12px;
 }
 
 .nav__menu {
@@ -82,6 +101,47 @@ p {
 }
 
 .nav__menu li {
-  padding: 8px 12px;
   font-size: 18px;
+  padding: 8px 12px;
+  cursor: pointer;
 }
+
+.nav__menu li:hover {
+  background-color: var(--color-dark-blue);
+  border-radius: var(--border-radius);
+}
+
+.nav__menu .active {
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius);
+}
+
+#home {
+  text-align: center;
+  background: url('imgs/bg-pattern.png') center/cover no-repeat;
+  padding: 40px;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.home__about, 
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: var(--border-radius);
+}
+
+
