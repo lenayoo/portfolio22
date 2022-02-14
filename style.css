@@ -91,12 +91,20 @@ ul {
 
 
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--blue-color);
+  width: 100%;
+  background-color: transparent;
   color: var(--color-white);
   padding: 8px 12px;
+  transition: all 3ms ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--blue-color);
+  padding: 0;
 }
 
 .nav__logo {
@@ -143,6 +151,7 @@ ul {
   text-align: center;
   background: url('imgs/bg-pattern.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 150px;
 }
 
 .home__avatar {
