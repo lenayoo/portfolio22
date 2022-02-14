@@ -100,11 +100,12 @@ ul {
   color: var(--color-white);
   padding: 8px 12px;
   transition: all 3ms ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--blue-color);
-  padding: 0;
+  padding: 6px;
 }
 
 .nav__logo {
