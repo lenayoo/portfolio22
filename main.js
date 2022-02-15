@@ -25,12 +25,30 @@ navMenu.addEventListener('click', (event) => {
   console.log(event.target.dataset.link);
   
   const link = event.target.dataset.link;
-  const scrollTo = document.querySelector(link);
+  // const scrollTo = document.querySelector(link);
 
   if (link == null){
     return;
   } else {
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    // scrollTo.scrollIntoView({behavior: "smooth"});
+    scroll(link);
   }
 })
 
+// handle contact button
+
+const homeContactbtn = document.querySelector('.home__contact');
+
+homeContactbtn.addEventListener('click', (event) => {
+  // const scrollTo = document.querySelector('#contact')
+
+  // scrollTo.scrollIntoView({behavior: 'smooth'})
+  scroll('#contact');
+});
+
+
+
+function scroll(selector){
+  const link = document.querySelector(selector);
+  link.scrollIntoView({behavior: 'smooth'});
+}
