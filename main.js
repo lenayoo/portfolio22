@@ -47,7 +47,15 @@ homeContactbtn.addEventListener('click', (event) => {
 });
 
 
+// arrow button for top
 
+const arrowUp = document.querySelector('.arrow-up');
+
+arrowUp.addEventListener('click', ()=>{
+  scroll('#home');
+})
+
+// created function for scrolling
 function scroll(selector){
   const link = document.querySelector(selector);
   link.scrollIntoView({behavior: 'smooth'});
