@@ -35,6 +35,17 @@ navMenu.addEventListener('click', (event) => {
   }
 })
 
+
+// nav toggleBtn
+
+const toggleBtn = document.querySelector('.nav__toggleBtn');
+const menu = document.querySelector('.nav__menu');
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  navbar.classList.toggle('active');
+});
+
 // handle contact button
 
 const homeContactbtn = document.querySelector('.home__contact');
